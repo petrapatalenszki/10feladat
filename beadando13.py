@@ -4,7 +4,7 @@ def pascalharomszog(n):
         return [1]
     else:
         X = pascalharomszog(n-1)
-    return [1] + [X[i] +X[i+1] for i in range(n-1)] + [1]
+        return [1] + [X[i] +X[i+1] for i in range(n-1)] + [1]
 def kiir(n):
     for i in range(n+1):
         print(pascalharomszog(i))
